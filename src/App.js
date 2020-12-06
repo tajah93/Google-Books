@@ -2,7 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Banner from "./components/Banner/Banner";
-import Form from "./components/Form/Form";
+import Search from "./pages/Search";
 
 function App() {
   return (
@@ -13,12 +13,12 @@ function App() {
 
 
         <Switch>
-          <Route path="/saved">
+          <Route exact path="/saved">
             {/* saved components go here */}
           </Route>
-          <Route path="/">
+          <Route exact path="/" component= {Search}>
             {/* search componenets go here */}
-            <Form />
+            
           </Route>
         </Switch>
 
