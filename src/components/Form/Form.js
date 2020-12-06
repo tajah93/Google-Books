@@ -9,7 +9,7 @@ function Form() {
                 Book 
             <input type="text" name="name" />
             </label>
-            <input type="submit" value="Submit" className="button"/>
+            <input type="submit" value="Search" className="button"/>
         </form>
 
     );
