@@ -1,10 +1,10 @@
 
 import axios from "axios";
 
-const BaseUrl = "https://www.googleapis.com/books/v1/volumes?q="
+const Url = "https://www.googleapis.com/books/v1/volumes?q="
 
 export default {
-    searchBooks: (query) => axios.get(BaseUrl + query),
+    searchBook: (query) => axios.get(Url + query),
     
     getBooks: function () {
         return axios.get("/api/books");
