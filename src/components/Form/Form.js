@@ -1,15 +1,15 @@
 import React from "react";
 
-function Form() {
+const Form= function props() {
     return (
 
         <form>
             <h3>Book Search</h3>
             <label>
                 Book 
-            <input type="text" name="name" />
+            <input type="text" name="name" value={props.search} onChange={props.handleInputChange}/>
             </label>
-            <input type="submit" value="Search" className="button"/>
+            <input type="submit" value="Search" className="button" onClick={props.handleFormSubmit}/>
         </form>
 
     );
