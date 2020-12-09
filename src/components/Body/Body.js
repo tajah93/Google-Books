@@ -1,6 +1,6 @@
 import React from "react";
 
-function SearchBody({ children }) {
+function Body({ children }) {
     return (
         <div className="card">
   <div className="card-body">
@@ -10,4 +10,4 @@ function SearchBody({ children }) {
     );
 }
 
-export default SearchBody;
+export default Body;
